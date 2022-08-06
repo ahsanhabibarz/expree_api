@@ -11,10 +11,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@tensorflow-models/coco-ssd": "^2.2.2",
+    "@tensorflow-models/mobilenet": "^2.1.0",
+    "@tensorflow/tfjs": "^3.19.0",
+    "@tensorflow/tfjs-node": "^3.19.0",
+    "@vladmandic/face-api": "^1.7.1",
     "cheerio": "^1.0.0-rc.10",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "express-fileupload": "^1.4.0",
     "nodemon": "^2.0.12",
     "request": "^2.88.2"
   }
