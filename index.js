@@ -34,7 +34,6 @@ app.post("/upload", async (req, res) => {
   res.json({
     detectedFaces: result,
   });
-  res.json({});
 });
 
 app.listen(process.env.PORT || 3000, function () {
