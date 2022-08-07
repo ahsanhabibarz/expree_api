@@ -23,18 +23,18 @@ app.use(fileUpload());
 
 app.post("/upload", async (req, res) => {
   console.log(req.files.files);
-  const imageBuffer = fs.readFileSync("./4.jpg");
-  console.log(imageBuffer);
+  // const imageBuffer = fs.readFileSync("./4.jpg");
+  // console.log(imageBuffer);
 
-  nude.scan(__dirname + "/6.jpg", function (resp) {
-    res.json(resp);
-  });
-
-  // const result = await faceapiService.detect(req.files?.files?.data);
-  // res.json({
-  //   detectedFaces: result,
+  // nude.scan(__dirname + "/6.jpg", function (resp) {
+  //   res.json(resp);
   // });
-  // res.json({});
+
+  const result = await faceapiService.detect(req.files?.files?.data);
+  res.json({
+    detectedFaces: result,
+  });
+  res.json({});
 });
 
 app.listen(process.env.PORT || 3000, function () {
