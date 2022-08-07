@@ -37,6 +37,10 @@ app.post("/upload", async (req, res) => {
   // res.json({});
 });
 
-app.listen(8000, () => {
-  console.log(`Example app listening at http://localhost:${8000}`);
+app.listen(process.env.PORT || 3000, function () {
+  console.log(
+    "Express server listening on port %d in %s mode",
+    this.address().port,
+    app.settings.env
+  );
 });
