@@ -98,3 +98,5 @@ cron.schedule("* * * * * *", async () => {
 app.listen(port, async () => {
   console.log("stated");
 });
+
+module.exports = app;
