@@ -1,5 +1,5 @@
 {
-  "name": "express_app",
+  "name": "basic",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,19 +11,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@tensorflow-models/coco-ssd": "^2.2.2",
-    "@tensorflow-models/mobilenet": "^2.1.0",
-    "@tensorflow/tfjs": "^3.19.0",
-    "@tensorflow/tfjs-node": "^3.19.0",
-    "@vladmandic/face-api": "^1.7.1",
-    "canvas": "^2.9.3",
-    "cheerio": "^1.0.0-rc.10",
+    "axios": "^1.4.0",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "express-fileupload": "^1.4.0",
-    "nodemon": "^2.0.12",
-    "nude": "^0.0.1",
-    "request": "^2.88.2"
+    "express": "^4.18.2",
+    "form-data": "^4.0.0",
+    "fs": "^0.0.1-security",
+    "node-cron": "^3.0.2",
+    "node-fetch": "^3.3.2"
   }
 }
