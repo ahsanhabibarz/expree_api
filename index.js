@@ -49,15 +49,16 @@ cron.schedule("* * * * * *", async () => {
     const form = new FormData();
     form.append("image", fs.createReadStream("./imagex.jpg"));
     let result = await axios({
-      url: "https://chinaonlineapi.com/api/v1/get/product/by/image/search",
+      url: "https://admin.wholesaleplus.com.bd/api/upload-image/",
       method: "POST",
       data: form,
       headers: {
         "Content-Type": `multipart/form-data`,
-        token:
-          "gwkne73882b40gwgkef5150e91759f7a1282303230000000001utnhjglowjhmfl2585gfkiugmwp56092219",
+        // token:
+        //   "gwkne73882b40gwgkef5150e91759f7a1282303230000000001utnhjglowjhmfl2585gfkiugmwp56092219",
       },
     });
+
     if (result) {
       console.log(result.data);
     }
